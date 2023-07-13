@@ -1,0 +1,42 @@
+<?php $star = $detail["stars"]; ?>
+            <?php for ($i = 0; $i < count($star); $i++) : ?>
+                <li class="list-group-item">Stars: <?= $detail[$i]; ?></li>
+            <?php endfor; ?>
+
+<img src="http://tes123.test:8080/img/{{ $detail["image"] }}.jpg" class="card-img-top mx-auto mt-3" style="height:200px; width:150px">
+<img src="http://tes123.test:8080/img/{{ $film["image"] }}.jpg" class="card-img-top img-thumbnail  mx-auto mt-3" style="height:200px; width:150px">
+//create new data
+Film::create([
+    'title' => "film ke 3",
+    'slug' => "film-ke-3",
+    'category_id' => 2,
+    'sinopsis' => "lorem ipsum dolor sit amet, consectet.fsaffsadasdasd",
+    'director' => "Amstrong"
+])
+
+//edit data
+Film::find(3)->update([
+    'title' => "film ke 3"
+])
+
+//post where 
+Film::where('title', 'film ke 3')->update(['sinopsis' => 'lorem ipsum dolor sit amet, consectet'])
+
+Category::create([
+    'name' => "Romantic",
+    'slug' => "Romantic",
+])
+@dd($categories);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio accusantium repellat deleniti perspiciatis totam neque.
+</body>
+</html>

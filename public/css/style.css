@@ -1,0 +1,116 @@
+body, html {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+.container-welcome{
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: -15px;
+    border-bottom: solid 2px;
+    border-right: solid 4px;
+    border-color: hsla(0, 100%, 50%, 0.5);
+}
+
+.film{
+    margin-bottom: 40px;
+    height:auto;
+    line-height: normal;
+    font-size:12px;
+    width:32%;
+    /* background-color:yellow; */
+}
+
+.film-container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color:red; */
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.detail-container{
+    /* background-color:red; */
+    margin-top:50px
+
+}
+.button-detail-container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+.button-detail-container .btn{ 
+    width:100px;
+    height:40px;
+    margin-left: 10px;
+}
+
+.detail{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+
+}
+
+.page-link{
+    background-color:black;
+    color:whitesmoke;
+}
+
+.page-item.active .page-link{
+    background-color:rgba(0, 0, 0, 0.79);
+    color:whitesmoke;
+    border-color:black;
+    box-shadow: 0px 1px -4px black;
+}
+
+.page-link:hover{ 
+    color:black;
+}
+
+
+/* .page-link:focus{ 
+    border-color:black;
+    color:black;
+} */
+
+
+/* login form css from bootstrap */
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  /* end css  */
+  
+  td.action-group{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  td.action-group .badge{ 
+    width:30px;
+    height:20px;
+    margin-right: 10px;
+  }
+
+  td .delete-wrapper{
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  
